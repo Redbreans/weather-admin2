@@ -1,0 +1,56 @@
+/**
+ * 旅游推荐
+ */
+#routeRecommeds {
+	width:100%;
+	height:auto;
+	
+}
+#routeRecommeds .content {
+	/*font-size:24px;
+	font-weight:bold;*/
+	width:1200px;
+	margin:0 auto;
+    /*text-align:center;*/
+}
+#routeRecommeds .content p.title {
+	/*margin-top:30px;
+	margin-bottom:30px;*/
+	padding-top:15px;
+	padding-bottom:10px;
+	width:1200px;
+	font-size:18px;
+	font-weight:bold;
+	margin:0 auto;
+    text-align:center;
+}
+/*#routeRecommeds .content img {
+	width:90%;
+	display:inline-block;
+}*/
+#routeRecommeds .content .des {
+	/*margin-top:30px;
+	margin-bottom:30px;*/
+	font-size:18px;
+}
+#routeRecommeds .content .des img {
+	display:block;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+/**
+ * 返回到首页
+ */
+#routeRecommeds .goback,
+#block .goback {
+	margin:0 auto;
+	width:1200px;
+	font-size:18px;
+	color:#999;
+	margin-top:15px;
+}
+.goback:hover {
+	color:#16994D;
+	cursor: pointer;
+}

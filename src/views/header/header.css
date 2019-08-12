@@ -1,0 +1,311 @@
+/**
+ * 头部样式
+ * 2018-11-26 修改
+ */
+
+html,
+body {
+	-webkit-text-size-adjust: none;
+	font-family: arial;
+}
+
+.page {
+	height: 110px;
+}
+
+header {
+	height: 110px;
+	background: url('../../assets/images/public_bg1.png') center center no-repeat;
+	background-size: cover;
+}
+
+.nav-herder {
+	width: 100%;
+	height: 110px;
+	border: none;
+	color: #fff;
+}
+
+#header-contents {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#header-contents .header-times {
+	width: 100%;
+	/*line-height: 26px;*/
+	line-height: 26px;
+	font-size: 14px;
+	text-align: right;
+	position: relative;
+	/*overflow:hidden;*/
+}
+
+#header-contents .header-times ul {
+	overflow: auto;
+}
+
+#header-contents .header-times ul,
+#header-contents .header-times li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#header-contents .header-times li {
+	float: right;
+}
+
+#header-contents .header-times li:nth-child(4) {
+	margin-right: 10px;
+}
+
+#header-contents .header-times li.season {
+	padding-left: 20px;
+}
+
+#header-contents .header-times li.language {
+	padding-left: 30px;
+}
+
+#header-contents .header-times li.language .yuyan img {
+	vertical-align: top;
+	padding-top: 9px;
+	margin-left: 2px;
+}
+
+#header-contents .header-times li.aboutUs {
+	margin-right:15px;
+}
+#header-contents .header-times li.aboutUs:hover {
+	cursor: pointer;
+}
+/**
+ * 选择语言的样式
+ */
+
+#header-contents .header-times .changeLanguage {
+	position: absolute;
+	bottom: -80px;
+	right: 0;
+	/*top: 20px;
+    right: 120px;*/
+	background: url('../../assets/images/public_languagebox.png') center no-repeat;
+	width: 160px;
+	background-size: 100% 100%;
+	height: 89px;
+	z-index: 999;
+	cursor: pointer;
+}
+
+#header-contents .header-times .changeLanguage p {
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+#header-contents .header-times .changeLanguage p:first-child {
+	margin-top: 9px;
+}
+
+#header-contents .header-times .changeLanguage .checked {
+	background-color: #f0f0f0;
+	color: #16994d;
+	text-align: center;
+}
+#header-contents .header-times .changeLanguage .mousezh:hover,
+#header-contents .header-times .changeLanguage .moseen:hover {
+	color:#16994D;
+}
+
+
+
+
+
+.nav-herder .header-title {
+	text-align: left;
+	overflow: auto;
+	font-size: 24px;
+	font-weight: bold;
+	width: 50%;
+	display: inline-block;
+}
+
+.nav-herder .header-title #titless {
+	background: url('../../assets/images/public_title.png') center no-repeat;
+	width: 355px;
+	height: 35px;
+	margin-top: 8px;
+	background-size: cover;
+}
+
+.header-title span,
+.header-title img {
+	float: left;
+}
+
+.header-title-imgOne {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.header-title-imgTwo {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+#header-contents .header-navBars {
+	text-align: right;
+	/*margin:0 auto;
+	width:1200px;
+	margin-right:0;*/
+}
+
+.header-navBars .leftBank {
+	/*height:40px;*/
+	display: inline-block;
+	vertical-align: top;
+	/*width:480px;*/
+}
+
+.header-navBars ul.rghtBank {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	/*width:700px;*/
+	margin-top: -14px;
+}
+
+.header-navBars .rghtBank li {
+	width: 140px;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.header-navBars .rghtBank li a {
+	position: relative;
+}
+
+.header-navBars .rghtBank li a>i {
+	position: absolute;
+	bottom: -8px;
+	left: 17px;
+	height: 4px;
+	display: inline-block;
+	width: 50px;
+}
+
+.header-navBars .rghtBank li:first-child a>i {
+	position: absolute;
+	bottom: -8px;
+	left: -5px;
+}
+
+.header-navBars .rghtBank li a.active {
+	color: #f7aa24;
+}
+
+.header-navBars .rghtBank li a.active i {
+	width: 50px;
+	height: 4px;
+	display: inline-block;
+	border-radius: 12px;
+	background: url('../../assets/images/public_navline.png') center no-repeat;
+	/*background-size:100%;*/
+}
+
+.yellowEarlywarning {
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	width: 100%;
+	font-size: 14px;
+	background-color: #f7aa24;
+	text-align: center;
+}
+
+.header-navBars .rghtBank li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-navBars ul.rghtBank li:hover a {
+	color: #F7AA24;
+}
+
+
+/**
+ * 点击切换中英文后的导航栏样式重新排版
+ */
+
+.header-navBars .changeUl {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -8px;
+}
+
+.header-navBars .changeUl li {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+	margin-left: 15px;
+}
+
+.header-navBars .changeUl li a {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+}
+
+.header-navBars .changeUl li a>i {
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -25px;
+	height: 4px;
+	display: inline-block;
+	width: 50px;
+}
+
+.header-navBars .changeUl li:first-child a>i {
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -25px;
+}
+
+.header-navBars .changeUl li a.active {
+	color: #f7aa24;
+}
+
+.header-navBars .changeUl li a.active i {
+	width: 50px;
+	height: 4px;
+	display: inline-block;
+	border-radius: 12px;
+	background: url('../../assets/images/public_navline.png') center no-repeat;
+	/*background-size:100%;*/
+}
+
+@media only screen and (max-width: 1200px) {
+	.nav-herder {
+		width: 1200px;
+	}
+	body {
+		overflow-x: scroll;
+	}
+}

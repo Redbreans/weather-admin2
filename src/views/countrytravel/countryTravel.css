@@ -1,0 +1,923 @@
+.pages {
+	width: 100%;
+	display: inline-block;
+}
+
+.contentCountryTravel {
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.countryTitle {
+	width: 1200px;
+	height: 40px;
+	color: #666666;
+	font-size: 16px;
+	width: 1200px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.countryTitle:hover {
+	color:#16994D;
+}
+
+#countrytravel .countryDetail {
+	height: 470px;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	position:relative;
+}
+
+#countrytravel .countryLeftIntroduce {
+	width: 460px;
+	margin-right: 20px;
+	display: inline-block;
+	height: 470px;
+	vertical-align: top;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#countrytravel .countryLeftIntroduce span.title {
+	font-size: 30px;
+	font-weight: bold;
+	color:#666666;
+}
+
+#countrytravel .countryLeftIntroduce .introduceContent {
+	font-size: 18px;
+	text-indent: 1.5em;
+	line-height: 40px;
+	margin-top: 10px;
+	color:#666666;
+}
+
+#countrytravel .countryRghtPicture {
+	width: 720px;
+	height: 470px;
+	display: inline-block;
+	/*margin-left: -3px;*/
+	vertical-align: top;
+	background: url('../../assets/images/country_bg1.png') center no-repeat;
+	background-size: cover;
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+#countrytravel .countryRghtPicture .currentLive {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+#countrytravel .countryRghtPicture .weatherIcons {
+	margin-left: 20px;
+	height: 129px;
+	margin-right: 20px;
+	position: relative;
+}
+
+#countrytravel .weatherIcons .weatherIconLeft,
+#countrytravel .weatherIcons .weatherIconRght,
+#countrytravel .weatherIcons .commendtionsImg {
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+}
+
+#countrytravel .weatherIcons .weatherIconLeft {
+	width: 43%;
+}
+
+#countrytravel .weatherIcons .weatherIconRght {
+	width: 215px;
+}
+
+#countrytravel .weatherIconLeft img,
+#countrytravel .weatherIconRght img {
+	margin-top: 8px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+#countrytravel .weatherIconLeft .depatureConditaions img {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+#countrytravel .weatherIconRght .rgthConditaions img {
+	margin-right: 10px;
+}
+
+#countrytravel .weatherIconLeft span,
+#countrytravel .weatherIconRght span {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations {
+	width: 680px;
+	margin: 0 auto;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayParent {
+	margin-top: 20px;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .foreast {
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 20px;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail {
+	vertical-align: top;
+	display: inline-block;
+	width: 80px;
+	color: #fff;
+	margin-right: 20px;
+	padding-top:5px;
+	padding-bottom:15px;
+}
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail:hover {
+	background-color:rgba(0,0,0,.1)
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail:last-child {
+	margin-right: 0;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail p {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail p.oneDayTime {
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail .oneDayDepature {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail .oneDayImg {
+	text-align: center;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail .oneDayImg img {}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail .oneDayImg .imgName {
+	margin: 0;
+	margin-top: 6px;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail .oneDayRecomd {
+	margin-top: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+
+#countrytravel .countryRghtPicture .weatherCondations .oneDayDetail .oneDayRecomd p {
+	margin: 0;
+}
+
+#countrytravel .commendtionsImg {
+	width: 160px;
+	height: 120px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background: url('../../assets/images/public_index_bg.png') center no-repeat;
+	border: none;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#countrytravel .commendtionsImg .recommend-index {
+	width: 160px;
+	padding-top: 30px;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+#countrytravel .wonderfulAtlas {
+	background-color: #f0f0f0;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#countrytravel .wonderfulAtlas .wonderfulTitle {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 36px;
+	height: 90px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+#countrytravel .wonderfulAtlas .wonderfulTitle p {
+	margin: 0;
+}
+
+#countrytravel .wonderfulAtlas .wonderfulTitle img {
+	display: block;
+	margin: 0 auto;
+}
+
+#countrytravel .aSmallTown {
+	width: 1200px;
+	margin: 0 auto;
+	height: 210px;
+	margin-bottom: 40px;
+}
+
+#countrytravel .aSmallTown .albumImg {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	width: 212px;
+	height: 210px;
+}
+
+#countrytravel .aSmallTown .albumImg span {
+	display: inline-block;
+	padding: 18px 21px 0 20px;
+}
+
+#countrytravel .aSmallTown .albumImg .album_bg_img {
+	width: 212px;
+	height: 210px;
+	background: url('../../assets/images/country_phtoto1.png') center no-repeat;
+	background-size: cover;
+	color: #39a00a;
+	font-size: 20px;
+	line-height: 36px;
+}
+#countrytravel .aSmallTown .albumImg .album_bg_img .albumImgName,
+#countrytravel .aSmallTown .albumImg .album_bg_img_one .albumImgName,
+#countrytravel .aSmallTown .albumImg .album_bg_img_two .albumImgName  {
+	height:80px;
+	overflow: hidden;
+}
+#countrytravel .aSmallTown .albumImg .album_bg_img_one {
+	width: 212px;
+	height: 210px;
+	background: url('../../assets/images/country_phtoto2.png') center no-repeat;
+	background-size: cover;
+	color: #efa957;
+	font-size: 20px;
+	line-height: 36px;
+}
+
+#countrytravel .aSmallTown .albumImg .album_bg_img_two {
+	width: 212px;
+	height: 210px;
+	background: url('../../assets/images/country_phtoto3.png') center no-repeat;
+	background-size: cover;
+	color: #f69e9e;
+	font-size: 20px;
+	line-height: 36px;
+}
+
+#countrytravel .aSmallTown .pictures,
+#countrytravel .aSmallTown .pictures .pictureImg {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg {
+	position: relative;
+	overflow: hidden;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg:nth-child(3) {
+	margin-right: 0;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg>div {
+	overflow: hidden;
+	width: 282px;
+	height: 210px;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg .pictureImgDes {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 32px;
+	line-height: 32px;
+	width: 282px;
+	text-align: center;
+	color:#fff;
+	display: block;
+	background:url('../../assets/images/country_photos_shadow.png') center no-repeat;
+	background-size:cover;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg .pictureImgDes.overName span{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/*color:red;*/
+	width:70%;
+	display:inline-block;
+}
+
+
+
+/**
+ * 鼠标移入改变文字颜色
+ */
+
+#countrytravel .aSmallTown .pictures .pictureImg:hover .pictureImgDes {
+	color: #F7AA24;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg:hover img {
+	transform: scale(1.2);
+	transition: all .5s ease-in-out;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg .videos {
+	position: relative;
+	overflow: hidden;
+	width: 282px;
+	height: 210px;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg .videos:hover video {
+	transform: scale(1.2);
+	transition: all .5s ease-in-out;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg .videos .video-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top:-25px;
+	margin-left:-25px;
+	width: 50px;
+	height: 50px;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg img {
+	height: 210px;
+	width: 282px;
+}
+
+#countrytravel .aSmallTown .pictures .pictureImg:nth-child(3) img {
+	margin-right: 0;
+}
+
+#countrytravel .aSmallTown .moreImg {
+	width: 60px;
+	height: 210px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0;
+	margin-left: 10px;
+	background: url('../../assets/images/country_more.png') center no-repeat;
+}
+
+#countrytravel .aSmallTown .moreImg:hover {
+	background: url('../../assets/images/country_more_on.png') center no-repeat;
+}
+
+
+/**
+ * 评论区
+ */
+
+#countrytravel.pages .comments {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#countrytravel .comments .totalComment {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 42px;
+	display: inline-block;
+}
+
+#countrytravel .comments .singleComment {
+	margin-top: 18px;
+	border-bottom: 1px dotted #ddd;
+	width:100%;
+}
+
+#countrytravel .comments .singleComment .usersImage {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+#countrytravel .singleComment .usersImage,
+#countrytravel .singleComment .usersInfo {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 18px;
+}
+
+#countrytravel .singleComment .usersInfo {
+	margin-left: 10px;
+	width:1000px;
+}
+
+#countrytravel .singleComment .usersInfo .usersName {
+	color: #F7AA24;
+	font-size: 16px;
+}
+
+#countrytravel .singleComment .usersInfo .otherInfo {
+	font-size: 14px;
+	color: #999;
+	margin-top: 3px;
+}
+
+#countrytravel .singleComment .usersInfo .usersQuestion {
+	font-size: 20px;
+	margin-top: 11px;
+}
+
+#countrytravel .singleComment .usersInfo .otherInfos {
+	position: relative;
+}
+/**
+ * 评论区
+ */
+
+/*.pages .comments {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.comments .totalComment {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.comments .singleComment {
+	margin-top: 20px;
+	border-bottom: 1px dotted #ddd;
+}
+
+.comments .singleComment .usersImage {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+#countrytravel .singleComment .usersImage,
+#countrytravel .singleComment .usersInfo {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 24px;
+}
+
+#countrytravel .singleComment .usersInfo .usersName {
+	color: #F7AA24;
+	font-size: 16px;
+}
+
+#countrytravel .singleComment .usersInfo .usersQuestion {
+	font-size: 20px;
+	margin-top: 7px;
+	margin-bottom: 9px;
+}
+
+#countrytravel .singleComment .usersInfo .otherInfo {
+	font-size: 14px;
+	color: #999;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#countrytravel .singleComment .usersInfo .otherInfos {
+	position: relative;
+}*/
+
+#countrytravel .singleComment .loadMoreInfos {
+	position: relative;
+	width: 1090px;
+	border: 1px solid #dddddd;
+	margin-bottom: 20px;
+	margin-left: 105px;
+	background-color: #f8f8f8;
+}
+
+#countrytravel .singleComment .loadMoreInfos .replys {
+	width: 1070px;
+	margin: 0 auto;
+}
+
+#countrytravel .singleComment .loadMoreInfos .imgPoint {
+	position: absolute;
+	left: 130px;
+	top: -9px;
+}
+
+.loadMoreInfos .replys .totalReply {
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.loadMoreInfos .replys .touristReply {
+	padding-bottom: 23px;
+	border-bottom: 1px solid #dddddd;
+	margin: 0 20px 20px 0;
+}
+
+.loadMoreInfos .replys .touristReply img {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+.loadMoreInfos .replys .touristReply img,
+.loadMoreInfos .replys .touristReply .detailReply {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.loadMoreInfos .replys .touristReply .detailReply .detailName {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.loadMoreInfos .replys .touristReply .detailReply .detailQuestion {
+	font-size: 14px;
+	margin-top: 7px;
+	margin-bottom: 10px;
+}
+
+.loadMoreInfos .replys .touristReply .detailReply .detailTime {
+	font-size: 14px;
+	color: #999999;
+	margin-right: 20px;
+}
+
+.loadMoreInfos .replys .touristReply .detailReply .detailGive {
+	display: inline-block;
+}
+
+.loadMoreInfos .touristReply:last-child {
+	border-bottom: 0;
+	margin: 0;
+}
+
+
+/*  分页   */
+
+.pages .comments .block {
+	margin-top: 25px;
+	text-align: right
+}
+
+.pages .comments .block .el-select .el-input.is-focus .el-input__inner {
+	border-color: #f7aa24;
+}
+
+.pages .comments .block .el-pagination.is-background .el-pager li:not(.disabled).active {
+	background-color: #f7aa24;
+}
+.pages .comments .block .el-pagination.is-background .el-pager li:not(.disabled).active:hover {
+	color:#fff;
+}
+.pages .comments .block .el-pagination.is-background .el-pager li:not(.disabled):hover {
+	color: #f7aa24;
+}
+
+
+/**
+ * 遮罩层样式
+ * =======
+ * =======
+ */
+
+.mask-k {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mask-k #wondermark {
+	width: 1140px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -350px;
+	margin-left: -570px;
+	z-index: 20;	
+}
+
+.mask-k #wondermark .wonderfulatlasName {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: #999999;
+	font-size: 14px;
+}
+
+.mask-k #wondermark .containersName {
+	width: 1120px;
+	margin: 0 auto;
+	font-size: 20px;
+	padding-top:4px;
+	margin-left:20px;
+}
+
+.mask-k #wondermark .containersName span {
+	color: #16994d;
+}
+
+.mask-k #wondermark .containersName span a {
+	color: black;
+}
+
+
+/*======轮播======*/
+
+.mask-k #wondermark .totalImgs {
+	width: 100%;
+	background-color: #f0f0f0;
+	position:relative;
+}
+
+.mask-k #wondermark .broadCastImg {
+	margin: 0 auto;
+	width: 1140px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.mask-k #wondermark .broadCastImg .leftBroadCast {
+	width: 780px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -3px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 1px 1px 2px 1px #999;
+	margin-left:20px;
+}
+
+.mask-k #wondermark .leftBroadCast .bg-img {
+	width: 100%;
+	height: 520px;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+.mask-k #wondermark .leftBroadCast .bg-img video {
+	height:520px;
+	width: 780px;
+}
+
+.mask-k #wondermark .broadCastImg .leftBroadCast .prev {
+	position: absolute;
+	top: 239px;
+	left: 20px;
+	z-index: 10;
+	width: 27px;
+	height: 43px;
+	border:none;	
+	cursor: pointer;
+	display:inline-block;
+	background: url('../../assets/images/country_left.png') center no-repeat;
+}
+
+.mask-k #wondermark .broadCastImg .leftBroadCast .next {
+	position: absolute;
+	top: 239px;
+	right: 20px;
+	width: 27px;
+	height: 43px;
+	z-index: 2;
+	background: url('../../assets/images/country_right.png') center no-repeat;
+	cursor: pointer;
+}
+.mask-k #wondermark .broadCastImg .leftBroadCast .prev:hover {
+	background: url('../../assets/images/country_left_on.png') center no-repeat;
+}
+.mask-k #wondermark .broadCastImg .leftBroadCast .next:hover {
+	background: url('../../assets/images/country_right_on.png') center no-repeat;	
+}
+
+
+/**
+ * 判断视频是否存在
+ */
+
+.mask-k #wondermark .broadCastImg .leftBroadCast .video-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -25px;
+	display: block;
+}
+
+.mask-k #wondermark .broadCastImg .leftBroadCast .video-imgs {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+
+/**
+ * 右边的小图样式
+ */
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast {
+	width: 320px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: -3px;
+	overflow: hidden;
+	height:520px;
+}
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls {
+	margin-right: 3px;
+	margin-bottom: 4px;
+}
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls:nth-child(2n) {
+	margin-right: 0;
+}
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg {
+	height: 100%;
+	width: 340px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls,
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one {
+	width: 150px;
+	height: 150px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one video {
+	width: 150px;
+	height: 150px;
+}
+
+
+/*
+ *给视频加上边框的样式 
+ */
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one.is_active {
+	border: 4px solid #16994d;
+	width: 142px;
+	height: 142px;
+	margin-right: 0;
+}
+
+.mask-k #wondermark .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one.is_active video {
+	width: 142px;
+	height: 142px;
+	margin-right: 0;
+}
+
+.mask-k .rghtBroadCast .containerImg img {
+	max-width: 150px;
+	height: 150px;
+	margin-right: -3px;
+	margin-top: -4px;
+}
+
+.mask-k .rghtBroadCast .containerImg img.is_active {
+	border: 4px solid #16994d;
+	width: 142px;
+	height: 142px;
+	margin-right: 0;
+}
+
+.mask-k .rghtBroadCast img:nth-child(1),
+.mask-k .rghtBroadCast img:nth-child(2) {
+	margin-top: 0;
+}
+
+.mask-k #wonderfulatlas .explain {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+
+/**
+ * 底部文字说明
+ */
+
+.mask-k #wondermark .broadCastImg .picContent {
+	margin-left:20px;
+	margin-right:20px;
+	line-height: 30px;
+	margin-top: 30px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	text-indent: 1.2em;
+}
+
+
+/**
+ * 关闭遮罩层按钮样式
+ */
+.mask-k .close-mark {
+	position:absolute;
+	top:-20px;
+	right:-20px;
+	width:50px;
+	height:50px;
+	background:url('../../assets/images/public_photo_out.png') center no-repeat;
+	background-size:cover;
+}
+.mask-k .close-mark:hover {
+	width:50px;
+	height:50px;
+	background:url('../../assets/images/public_photo_out2.png') center no-repeat;
+	background-size:cover;
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.containers.container {
+		width: 1200px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.containers.container {
+		width: 1200px;
+		overflow-x: scroll;
+	}
+	body {
+		overflow-x: scroll;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.wonderfulAtlas {
+		width: 1200px;
+	}
+	body {
+		overflow-x: scroll;
+	}
+}

@@ -1,0 +1,822 @@
+/**
+ * 全州主要交通道路气象样式
+ */
+
+
+/**
+ * 去掉地图的样式
+ */
+
+.smnoprint div {
+	display: none;
+}
+
+.pageTraffics .trafficMeteor {
+	height: 680px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.pageTraffics .trafficMeteor .trafficFirst {
+	height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+	color: #16994D;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pageTraffics .trafficMeteor .trafficFirst img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.pageTraffics .trafficMeteor .trafficSecond .trafficSecondName {
+	height: 40px;
+	width: 100px;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	margin-right: 5px;
+	text-align: center;
+	/*background: url('../../assets/images/homepage_btn1.png') center no-repeat;*/
+	background-color: #16994D;
+}
+
+.pageTraffics .trafficMeteor .trafficSecond .trafficSecondName:hover {
+	background-color: #32C972;
+}
+
+.pageTraffics .trafficMeteor .trafficSecond .is-active {
+	height: 40px;
+	width: 100px;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	margin-right: 5px;
+	text-align: center;
+	background: url('../../assets/images/homepage_btn1_on.png') center no-repeat;
+}
+
+.pageTraffics .trafficMeteor .trafficThird {
+	height: 550px;
+	width: 1200px;
+	margin-top: 10px;
+	position: relative;
+	background: url('../../assets/images/traffic_bgbox1.png') center no-repeat;
+	background-size: cover;
+}
+
+
+/**
+ * 国道对应的天气实况样式
+ */
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic {
+	width: 240px;
+	height: 240px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	color: #F7AA24;
+	text-indent: 1.5em;
+	background: url('../../assets/images/homepage_bgbox2_box.png') center no-repeat;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all .9s linear;
+	transition: all .9s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights {
+	font-size: 16px;
+	margin-top: 5px;
+	padding-left: 240px;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .conditionCityName {
+	font-size: 18px;
+	margin-top: 10px;
+	padding-left: 240px;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.heightkm {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.hpa {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.opadeg {
+	-webkit-transition: all .4s linear;
+	transition: all .4s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.temperature {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.humidity {
+	-webkit-transition: all .6s linear;
+	transition: all .6s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.windSpeed {
+	-webkit-transition: all .7s linear;
+	transition: all .7s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.precipitation {
+	-webkit-transition: all .8s linear;
+	transition: all .8s linear;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic .heights.precipitation {
+	-webkit-transition: all .9s linear;
+	transition: all .9s linear;
+}
+
+
+/* :hover */
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic.conditionDatashover div {
+	padding-left: 0px;
+}
+
+.pageTraffics .trafficMeteor .trafficThird .detailTraffic.conditionDatashover {
+	opacity: 1;
+}
+
+
+/**
+ * 地图的样式
+ */
+
+.pageTraffics .trafficMeteor .trafficThird #mapSiteTraffic {
+	height: 542px;
+	width: 1192px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 100;
+}
+
+
+/**
+ * 第二部分样式----具体某个地点对应的天气实况
+ */
+
+.pageTraffics .weatherDetail {
+	width: 100%;
+	background: url('../../assets/images/timg.jpg') center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 遮罩 */
+
+.pageTraffics .weatherDetail .containerBannerMask {
+	position: relative;
+	width: 100%;
+	/* background-color: red;  */
+	background: url('../../assets/images/320620.jpg') center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 
+  实况内容
+   */
+
+.pageTraffics .weatherDetail .currentWeatherDetails {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/*地址*/
+
+.weatherDetail .currentWeatherDetails .scenicAreaName {
+	width: 100%;
+	height: 78px;
+	padding-top: 32px;
+}
+
+.weatherDetail .currentWeatherDetails .scenicAreaName span {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 50px;
+	font-size: 36px;
+	color: #fff;
+	padding: 3px 20px 9px 20px;
+}
+
+
+/* 地址:hover */
+
+.weatherDetail .currentWeatherDetails .scenicAreaName span:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+/*   实况详情框  */
+
+.weatherDetail .currentWeatherDetails .detailsBlock {
+	width: 100%;
+	height: 350px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	color: #ffffff;
+}
+
+
+/* 时间 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .currentTime {
+	position: relative;
+	top: 0;
+	font-size: 18px;
+	text-align: left;
+	padding: 15px 0 0 35px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .currentTime img {
+	position: relative;
+	top: 5px;
+	left: 0;
+}
+
+
+/* 温度 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .temperature {
+	position: relative;
+	top: 0;
+	font-size: 120px;
+}
+
+
+/* 指数及温度 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock {
+	position: relative;
+	top: 0;
+	width: 580px;
+	height: 46px;
+	border: 1px #ffffff solid;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0 auto;
+}
+
+
+/* 指数及温度:hover */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock i {
+	width: 1px;
+	border-left: 1px #ffffff solid;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock span {
+	line-height: 46px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weather {
+	padding-right: 16px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeriousPollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeverePollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiModeratePollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiMildPollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiGood,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiOptimal,
+.weatherDetail .currentWeatherDetails .detailsBlock .sunriseTime {
+	padding: 0 16px 0 16px;
+}
+
+
+/* api优 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiOptimal {
+	color: #30DB76;
+}
+
+
+/* api良好*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiGood {
+	color: #ffc83f;
+}
+
+
+/* 轻度污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiMildPollution {
+	color: #FF9732;
+}
+
+
+/* 中度污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiModeratePollution {
+	color: #FF3C32;
+}
+
+
+/* 重度污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeverePollution {
+	color: #d015ab;
+}
+
+
+/* 严重污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeriousPollution {
+	color: #a24fff;
+}
+
+
+/* 风向_湿度等情况 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs {
+	position: relative;
+	top: 0;
+	text-align: center;
+	font-size: 20px;
+	color: #ffffff;
+	height: 100px;
+	text-align: left;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span {
+	position: relative;
+	top: 0;
+	line-height: 100px;
+	padding: 0 80px 0 16px;
+	font-size: 24px;
+	font-weight: normal;
+	height: 32px;
+	overflow: hidden;
+	cursor: text;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span:hover {
+	font-size: 26px;
+	transition: all ease-in-out .5s;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span:hover img {
+	transform: scale(1.2);
+	transition: all ease-in-out .5s;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span img {
+	position: relative;
+	top: 10px;
+	line-height: 100px;
+	padding: 0;
+}
+
+
+/* 
+  天气预报
+   */
+
+.pageTraffics .weatherDetail .weatherForecastBlock {
+	z-index: 300;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/* 名字切换 */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock {
+	margin: 10px 0 0 0;
+	width: 100%;
+	height: 70px;
+	background: rgba(0, 0, 0, 0.9);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #999999;
+	line-height: 70px;
+	text-align: left;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock .hoursTitle {
+	position: relative;
+	padding: 0 26px 0 20px;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock .dayTitle {
+	position: relative;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock .hoursTitle i {
+	position: absolute;
+	top: 36px;
+	left: 40px;
+	width: 70px;
+	height: 4px;
+	background: url('../../assets/images/public_whether_switchline.png') center no-repeat;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock .dayTitle i {
+	position: absolute;
+	top: 36px;
+	left: 25px;
+	width: 70px;
+	height: 4px;
+	background: url('../../assets/images/public_whether_switchline.png') center no-repeat;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock .hoursTitle.changes {
+	color: #32E77B;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .titleBlock .dayTitle.changes {
+	color: #32E77B;
+}
+
+
+/* 内容切换 */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .contentBlock {
+	z-index: 500;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+/* .pageTraffics .weatherDetail .weatherForecastBlock .contentBlock .scrollBarBlock {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+  overflow-x: scroll;
+} */
+
+
+/* 24小时天气预报内容 */
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock {
+	position: relative;
+	width: 1200px;
+	height: 350px;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+
+
+/* :hover */
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime .date {
+	margin-top: 24px;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime span {
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: top;
+	margin: center;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime .imgblock {
+	margin-bottom: 20px;
+	height: 52px;
+	line-height: 52px;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime img {
+	margin-top: 16px;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime .weather {
+	vertical-align: top;
+	margin: center;
+	margin-top: 22px;
+	padding: 0;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime .direction {
+	margin-top: 136px;
+	margin-bottom: 5px;
+	vertical-align: top;
+	margin: center;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .hoursTime .directions {
+	vertical-align: top;
+	margin: center;
+}
+
+
+/* 天气插件 */
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .myChart {
+	position: absolute;
+	top: 145px;
+	left: 0;
+	height: 138px;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.pageTraffics .weatherForecastBlock .hoursContentBlock .myChart>div {
+	z-index: 1000;
+}
+
+
+/* 24小时指数 */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .contentBlock .scrollBarBlocks {
+	position: relative;
+	top: 0;
+	padding: 20px 0 30px 0;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock {
+	position: relative;
+	left: 17px;
+	top: 0;
+	z-index: 500;
+	text-align: left;
+	width: 1170px;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks {
+	position: relative;
+	width: 232px;
+	height: 130px;
+	border: 1px #ffffff dashed;
+	margin-bottom: -1px;
+	margin-right: -1px;
+	display: inline-block;
+	vertical-align: top;
+	/* border: 1px red solid; */
+	overflow: hidden;
+}
+
+
+/* :hover */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks:first-child {
+	border-left: 1px #ffffff dashed;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks img {
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks .block {
+	margin: 35px 0 0 105px;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks .block .title {
+	color: #dddddd;
+	font-size: 14px;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks .block .content {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* 
+  七天天气预报 
+  */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .contentBlock .dayContentBlock {
+	position: relative;
+	width: 1200px;
+	height: 540px;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 171px;
+	height: 480px;
+	font-size: 18px;
+	color: #fff;
+	margin: 30px 0 30px 0;
+}
+
+
+/* :hover */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days i {
+	position: absolute;
+	top: 0;
+	width: 171px;
+	height: 480px;
+	border-right: 1px #dddddd dashed;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days:nth-child(7) i {
+	border: 0;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherSeries,
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherDegree,
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherName,
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgNightblocks,
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgblocks,
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .everyDay,
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .day {
+	vertical-align: top;
+	width: 173px;
+	text-align: center;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .day {
+	margin-top: 0;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	width: 173px;
+	text-align: center;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .everyDay {
+	margin-top: 2px;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	width: 173px;
+	text-align: center;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgblocks {
+	margin-top: 36px;
+	display: inline-block;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgNightblocks {
+	margin-top: 0;
+	display: inline-block;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherName {
+	margin-top: 18px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherDegree {
+	margin-top: 10px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherSeries {
+	margin-top: 10px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+
+/* 7天天气指数 */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock {
+	position: relative;
+	top: 16px;
+	left: 20px;
+	width: 130px;
+	height: 145px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock .daysExponent {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock span {
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	line-height: 24px;
+	width: 130px;
+	color: #ffffff;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock .names {
+	font-weight: 700;
+}
+
+
+/* 鼠标移入显示  */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock:hover+.daysExponentOneBlock {
+	display: block;
+}
+
+
+/*7天天气指数hover样式——内容*/
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock {
+	background: url('../../assets/images/scenic_dialogbox.png') center no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: -140px;
+	left: -140px;
+	width: 133px;
+	min-height: 50px;
+	z-index: 500;
+	padding: 10px 10px 10px 10px;
+	text-align: left;
+	display: none;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock .arrows {
+	background: url('../../assets/images/scenic_dialogbox_arrow.png') center no-repeat;
+	background-position: 100% 100%;
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	top: 30px;
+	left: 151px;
+	z-index: 600;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock span {
+	text-align: left;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.pageTraffics .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock .names {
+	font-weight: 700;
+}
+
+
+/* 空标签 */
+
+.pageTraffics .weatherDetail .weatherForecastBlock .nulls {
+	background: #000000;
+	width: 100%;
+	height: 50px;
+	opacity: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+	.pageTraffics .weatherDetail {
+		width: 1200px;
+	    background-size:100% 100%;
+	}
+}

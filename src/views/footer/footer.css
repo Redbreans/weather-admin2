@@ -1,0 +1,152 @@
+/*  尾部 样式  */
+	
+	ul,
+	li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	#footer-contents {
+		height:230px;
+		width:1200px;
+		margin:0 auto;
+		position:relative;
+	}	
+	
+	.crolLeft,.textLeft {
+		display:inline-block;
+		vertical-align: top;
+		width:49%;
+		
+	}
+	.textLeft {
+		width:50%;
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	footer {
+		padding: 0;
+		width:100%;
+		position:relative;
+	}
+	
+	footer .nav-footer-first {
+		background-color: #555555;
+	}
+	
+	footer,
+	.nav-footer-end {
+		background-color: #444444;
+	}
+	
+	.nav-footer-copy {
+		/*height: 50px;*/
+		line-height: 25px;
+		font-size: 14px;
+		color: #fff;
+		text-align: center;
+		padding-top:10px;
+		padding-bottom:10px;
+		margin:0 auto;
+		width:1200px;
+	}
+	
+	.friendLink {
+		font-size: 24px;
+		color: #fff;
+		margin-top: 35px;
+		font-weight: bold;
+	}
+	
+	.footer-ending {
+		margin-top: 25px;
+	}
+	
+	.end-title ul {
+		overflow: auto;
+	}
+	
+	.end-title ul li {
+		float: left;
+		color: #fff;
+		font-size: 18px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+    .end-title ul li a {
+    	text-decoration: none;
+    	color: #fff;
+    }
+    .end-title ul li:hover a {
+    	color:#6fe69f;
+    }
+	.textLeft {
+		text-align: right;
+	}
+	
+	.smallProgram,
+	.publicNumber {
+		margin-top: 30px;
+		width: 160px;
+		height: 160px;
+		margin-left: 40px;
+		display: inline-block;
+	}
+	
+	.smallProgram p,
+	.publicNumber p {
+		padding: 0;
+		margin: 0;
+		margin-top: 10px;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	.smallProgram img,
+	.publicNumber img {
+		width: 160px;
+		height: 160px;
+		display: block;
+	}
+	
+	.copyEnding,
+	.nav-footer-copy {
+		background-color: #444444;
+	}
+	/**
+	 * 回到顶部样式
+	 */
+	.goTop {
+		width:60px;
+		height:60px;
+		background:url('../../assets/images/public_backtop_on.png') center no-repeat;
+		position: fixed;
+		background-size:cover;
+		bottom:290px;
+		right:40px;
+		z-index:999;
+		cursor: pointer;
+	}
+	.goTop:hover{
+		background:url('../../assets/images/public_backtop.png') center no-repeat;
+		width:60px;
+		height:60px;
+		position: fixed;
+		background-size:cover;
+		bottom:290px;
+		right:40px;
+		z-index:999
+	}
+	
+	@media only screen and (max-width: 1200px) {
+	#footer-contents,footer{
+		width: 1200px;
+		/*overflow-x: scroll;*/
+	}
+	body{
+		overflow-x: scroll;
+	}
+	
+}

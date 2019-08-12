@@ -1,0 +1,1031 @@
+/**
+ * 小太阳样式
+ */
+
+.sun {
+	display: inline-block;
+	width: 158px;
+	height: 79px;
+	border: 1px dotted #fff;
+	border-radius: 79px 79px 0 0;
+	vertical-align: middle;
+	position: relative;
+	/*background-color:red;*/
+	/*overflow: hidden;*/
+}
+
+.sun #suncircle {
+	position: absolute;
+	left: -14px;
+	bottom: -14px;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	z-index: 1;
+	background: url('../../assets/images/public_icon_warning.png') no-repeat;
+}
+
+.smnoprint div {
+	display: none;
+}
+
+.pages.scenicAreaPages {
+	display: block;
+}
+
+.scenicAreaPages {
+	font-family: "微软雅黑";
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.scenicAreaPages .landscapeDistribution {
+	width: 100%;
+	height: 790px;
+	/* background: url('../../assets/images/homepage_bg2.png') center no-repeat; */
+	background-size: cover;
+}
+
+.scenicAreaPages .cs {
+	width: 100%;
+}
+
+
+/* ------------------------- */
+
+.scenicAreaPages .distributionImg {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.scenicAreaPages .distributionName {
+	height: 80px;
+	line-height: 80px;
+	color: #16994D;
+	font-size: 24px;
+}
+
+.scenicAreaPages .distributionName img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+/*
+ 地图块
+  */
+
+.scenicAreaPages .containerDescript {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* 名称切换 */
+
+.scenicAreaPages .nameShow {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.scenicAreaPages .nameShow .signNames {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.scenicAreaPages .nameShow .signNames>div>div {
+	width: 100px;
+	height: 40px;
+	background-color: #16994D;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	margin: 0 10px 10px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.scenicAreaPages .nameShow .signNames:hover>div>div {
+	background-color: #32C972;
+}
+
+.scenicAreaPages .nameShow .signNames>div.isshow>div {
+	background-color: #F7AA24;
+}
+
+
+/* 小窗口 */
+
+
+/*加class名的动画效果*/
+
+.scenicAreaPages .butteryHatch {
+	width: 180px;
+	height: 190px;
+	z-index: 200;
+	background: url('../../assets/images/homepage_bgbox1_box.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all .7s linear;
+	transition: all .7s linear;
+}
+
+.scenicAreaPages .butteryHatch div.title {
+	font-size: 18px;
+	color: #16994D;
+	font-weight: 800;
+	padding-top: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 180px;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.scenicAreaPages .butteryHatch div {
+	font-size: 16px;
+	color: #16994D;
+	padding-bottom: 6px;
+	padding-left: 180px;
+}
+
+.scenicAreaPages .butteryHatch div.hpa {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.scenicAreaPages .butteryHatch div.weather {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.scenicAreaPages .butteryHatch div.humidity {
+	-webkit-transition: all .4s linear;
+	transition: all .4s linear;
+}
+
+.scenicAreaPages .butteryHatch div.direction {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.scenicAreaPages .butteryHatch div.precipitation {
+	-webkit-transition: all .6s linear;
+	transition: all .6s linear;
+}
+
+.scenicAreaPages .butteryHatch.WeatherFactDatashover div {
+	padding-left: 20px;
+}
+
+.scenicAreaPages .butteryHatch.WeatherFactDatashover {
+	opacity: 1;
+}
+
+
+/* 地图  */
+
+.scenicAreaPages .landsMaps {
+	width: 870px;
+	height: 610px;
+	background: url('../../assets/images/homepage_bgbox1.png') center no-repeat;
+	background-size: 100% 100%;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.scenicAreaPages .landsMaps #mapSiteBox {
+	height: 602px;
+	width: 862px;
+	margin: 4px 4px 4px 4px;
+	z-index: 100;
+}
+
+
+/* 人气热度 */
+
+.scenicAreaPages .popularHeat {
+	width: 320px;
+	height: 610px;
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* background: url('../../assets/images/homepage_bgbox1.png') center no-repeat; */
+}
+
+
+/* 人气热度标题 */
+
+.scenicAreaPages .popularHeat .title {
+	width: 320px;
+	background-color: #16994D;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: left;
+}
+
+.scenicAreaPages .popularHeat .title span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.scenicAreaPages .popularHeat .title span:first-child {
+	width: 10%;
+}
+
+.scenicAreaPages .popularHeat .title span:nth-child(2) {
+	width: 28%;
+}
+
+.scenicAreaPages .popularHeat .title span:nth-child(3) {
+	width: 19%;
+}
+
+
+/* 人气热度内容 */
+
+.scenicAreaPages .popularHeat .content {
+	width: 312px;
+	height: 552px;
+	line-height: 25px;
+	color: #16994D;
+	font-size: 14px;
+	text-align: left;
+	border: 4px solid #d0ebde;
+	border-top: none;
+	overflow: hidden;
+	padding-top: 4px;
+	background-color: #ffffff;
+}
+
+.scenicAreaPages .popularHeat .content .contentBlock {
+	width: 312px;
+	height: 530px;
+	line-height: 48px;
+	color: #16994D;
+	font-size: 14px;
+	text-align: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.scenicAreaPages .popularHeat .content .contentBlock .isshow {
+	color: #F7AA24;
+}
+
+.scenicAreaPages .popularHeat .content span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.scenicAreaPages .popularHeat .content span:first-child {
+	width: 10%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.scenicAreaPages .popularHeat .content span:nth-child(2) {
+	width: 28%;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/* 热度名字：hover */
+
+.scenicAreaPages .popularHeat .content span:nth-child(2):hover {
+	color: #F7AA24;
+}
+
+
+/* .scenicAreaPages .popularHeat .content span.isColor {
+  color: #F7AA24;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.scenicAreaPages .popularHeat .content span:nth-child(3) {
+	width: 18%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.scenicAreaPages .popularHeat .content span img {
+	margin: 0 3px 0 0;
+}
+
+.scenicAreaPages .popularHeat .content span img:nth-child(5) {
+	margin-right: 0;
+}
+
+
+/* 
+天气具体情况细部展示区 
+*/
+
+.scenicAreaPages .weatherDetail {
+	width: 100%;
+	background: url('../../assets/images/scenic_bg1.png') center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 遮罩 */
+
+.scenicAreaPages .weatherDetail .containerBanner .containerBannerMask {
+	width: 100%;
+	/* background-color: red;  */
+	background: url('../../assets/images/public_index_bg_mask.png') center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*背景轮播*/
+
+.scenicAreaPages .weatherDetail .containerBanner {
+	width: 100%;
+	height: auto !important;
+	position: static;
+}
+
+.scenicAreaPages .weatherDetail .containerBanner .el-carousel__container {
+	height: auto !important;
+	position: static;
+}
+
+.scenicAreaPages .weatherDetail .containerBanner .bg-img {
+	width: 100%;
+	height: auto !important;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.scenicAreaPages .weatherDetail .containerBanner .el-carousel__item {
+	position: static;
+	overflow-y: hidden;
+	display: block;
+}
+
+
+/* 
+实况内容
+ */
+
+.scenicAreaPages .weatherDetail .currentWeatherDetails {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/*地址*/
+
+.weatherDetail .currentWeatherDetails .scenicAreaName {
+	width: 100%;
+	height: 78px;
+	padding-top: 32px;
+}
+
+.weatherDetail .currentWeatherDetails .scenicAreaName span {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 50px;
+	font-size: 36px;
+	color: #fff;
+	padding: 3px 20px 9px 20px;
+}
+
+
+/* 地址:hover */
+
+.weatherDetail .currentWeatherDetails .scenicAreaName span:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+
+/*   实况详情框  */
+
+.weatherDetail .currentWeatherDetails .detailsBlock {
+	width: 100%;
+	height: 350px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	color: #ffffff;
+}
+
+
+/* 时间 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .currentTime {
+	position: relative;
+	top: 0;
+	font-size: 18px;
+	text-align: left;
+	padding: 15px 0 0 35px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .currentTime img {
+	position: relative;
+	top: 5px;
+	left: 0;
+}
+
+
+/* 温度 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .temperature {
+	position: relative;
+	top: 0;
+	font-size: 120px;
+}
+
+
+/* 指数及温度 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock {
+	position: relative;
+	top: 0;
+	width: 580px;
+	height: 46px;
+	border: 1px #ffffff solid;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0 auto;
+}
+
+
+/* 指数及温度:hover */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock i {
+	width: 1px;
+	border-left: 1px #ffffff solid;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weatherTimeBlock span {
+	line-height: 46px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .weather {
+	padding-right: 16px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeriousPollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeverePollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiModeratePollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiMildPollution,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiGood,
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiOptimal,
+.weatherDetail .currentWeatherDetails .detailsBlock .sunriseTime {
+	padding: 0 16px 0 16px;
+}
+
+
+/* api优 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiOptimal {
+	color: #30DB76;
+}
+
+
+/* api良好*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiGood {
+	color: #ffc83f;
+}
+
+
+/* 轻度污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiMildPollution {
+	color: #FF9732;
+}
+
+
+/* 中度污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiModeratePollution {
+	color: #FF3C32;
+}
+
+
+/* 重度污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeverePollution {
+	color: #d015ab;
+}
+
+
+/* 严重污染*/
+
+.weatherDetail .currentWeatherDetails .detailsBlock .aqiSeriousPollution {
+	color: #a24fff;
+}
+
+
+/* 风向_湿度等情况 */
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs {
+	position: relative;
+	top: 0;
+	text-align: center;
+	font-size: 20px;
+	color: #ffffff;
+	height: 100px;
+	text-align: left;
+	width: 1200px;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span {
+	position: relative;
+	top: 0;
+	line-height: 100px;
+	padding: 0 80px 0 16px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span:hover {
+	font-size: 26px;
+	transition: all ease-in-out .5s;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span:hover img {
+	transform: scale(1.2);
+	transition: all ease-in-out .5s;
+}
+
+.weatherDetail .currentWeatherDetails .detailsBlock .windIs span img {
+	position: relative;
+	top: 10px;
+	line-height: 100px;
+	padding: 0;
+}
+
+
+/* 
+天气预报
+ */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock {
+	z-index: 300;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/* 名字切换 */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock {
+	margin: 10px 0 0 0;
+	width: 100%;
+	height: 70px;
+	background: rgba(0, 0, 0, 0.9);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #999999;
+	line-height: 70px;
+	text-align: left;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock .hoursTitle {
+	position: relative;
+	padding: 0 26px 0 20px;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock .dayTitle {
+	position: relative;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock .hoursTitle i {
+	position: absolute;
+	top: 36px;
+	left: 40px;
+	width: 70px;
+	height: 4px;
+	background: url('../../assets/images/public_whether_switchline.png') center no-repeat;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock .dayTitle i {
+	position: absolute;
+	top: 36px;
+	left: 25px;
+	width: 70px;
+	height: 4px;
+	background: url('../../assets/images/public_whether_switchline.png') center no-repeat;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock .hoursTitle.changes {
+	color: #32E77B;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .titleBlock .dayTitle.changes {
+	color: #32E77B;
+}
+
+
+/* 内容切换 */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .contentBlock {
+	z-index: 500;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+/* 24小时天气预报内容 */
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock {
+	position: relative;
+	width: 1200px;
+	height: 350px;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+
+
+/* :hover */
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime .date {
+	margin-top: 24px;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime span {
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: top;
+	margin: center;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime .imgblock {
+	margin-bottom: 20px;
+	height: 52px;
+	line-height: 52px;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime img {
+	margin-top: 16px;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime .weather {
+	vertical-align: top;
+	margin: center;
+	margin-top: 22px;
+	padding: 0;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime .direction {
+	margin-top: 136px;
+	margin-bottom: 5px;
+	vertical-align: top;
+	margin: center;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .hoursTime .directions {
+	vertical-align: top;
+	margin: center;
+}
+
+
+/* 天气插件 */
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .myChart {
+	position: absolute;
+	top: 145px;
+	left: 0;
+	height: 138px;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.scenicAreaPages .weatherForecastBlock .hoursContentBlock .myChart>div {
+	z-index: 1000;
+}
+
+
+/* 24小时指数 */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .contentBlock .scrollBarBlocks {
+	position: relative;
+	top: 0;
+	padding: 20px 0 30px 0;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock {
+	position: relative;
+	left: 17px;
+	top: 0;
+	z-index: 500;
+	text-align: left;
+	width: 1170px;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks {
+	position: relative;
+	width: 232px;
+	height: 130px;
+	border: 1px #ffffff dashed;
+	margin-bottom: -1px;
+	margin-right: -1px;
+	display: inline-block;
+	vertical-align: top;
+	/* border: 1px red solid; */
+	overflow: hidden;
+}
+
+
+/* :hover */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks:first-child {
+	border-left: 1px #ffffff dashed;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks img {
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks .block {
+	margin: 35px 0 0 105px;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks .block .title {
+	color: #dddddd;
+	font-size: 14px;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .hoursExponentBlock .blocks .block .content {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* 
+七天天气预报 
+*/
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .contentBlock .dayContentBlock {
+	position: relative;
+	width: 1200px;
+	height: 540px;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 171px;
+	height: 480px;
+	font-size: 18px;
+	color: #fff;
+	margin: 30px 0 30px 0;
+}
+
+
+/* :hover */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days i {
+	position: absolute;
+	top: 0;
+	width: 171px;
+	height: 480px;
+	border-right: 1px #dddddd dashed;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days:nth-child(7) i {
+	border: 0;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherSeries,
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherDegree,
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherName,
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgNightblocks,
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgblocks,
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .everyDay,
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .day {
+	vertical-align: top;
+	width: 173px;
+	text-align: center;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .day {
+	margin-top: 0;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	width: 173px;
+	text-align: center;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .everyDay {
+	margin-top: 2px;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	width: 173px;
+	text-align: center;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgblocks {
+	margin-top: 36px;
+	display: inline-block;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .imgNightblocks {
+	margin-top: 0;
+	display: inline-block;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherName {
+	margin-top: 18px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherDegree {
+	margin-top: 10px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .weatherSeries {
+	margin-top: 10px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+
+/* 7天天气指数 */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock {
+	position: relative;
+	top: 16px;
+	left: 20px;
+	width: 130px;
+	height: 145px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock .daysExponent {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock span {
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	line-height: 24px;
+	width: 130px;
+	color: #ffffff;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock .names {
+	font-weight: 700;
+}
+
+
+/* 鼠标移入显示  */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentBlock:hover+.daysExponentOneBlock {
+	display: block;
+}
+
+
+/*7天天气指数hover样式——内容*/
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock {
+	/* background: url('../../assets/images/scenic_dialogbox.png') center no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+	top: -145px;
+	left: -145px;
+	width: 150px;
+	min-height: 50px;
+	z-index: 500;
+	/*padding: 10px 10px 10px 10px;*/
+	padding: 0 0 0 10px;
+	text-align: left;
+	display: none;
+	border: 1px #C2C7BF solid;
+	border-radius: 10px;
+	background-color: #5B5B5B;
+	z-index: 9999;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock .arrows {
+	background: url('../../assets/images/scenic_dialogbox_arrow.png') center no-repeat;
+	background-position: 100% 100%;
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	top: 20px;
+	left: 160px;
+	z-index: 9999;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock span {
+	/*display: inline-block;*/
+	text-align: left;
+	font-size: 14px;
+	line-height: 24px;
+	/*width: 140px;*/
+	color: #ffffff;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock .daysExponentOne span {
+	display: inline-block;
+}
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .dayContentBlock .days .daysExponentOneBlock .names {
+	font-weight: 700;
+}
+
+
+/* 空标签 */
+
+.scenicAreaPages .weatherDetail .weatherForecastBlock .nulls {
+	background: #000000;
+	width: 100%;
+	height: 50px;
+	opacity: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+	.pageTraffics .weatherDetail {
+		width: 1200px;
+	    background-size:100% 100%;
+	}
+	.pages.scenicAreaPages{
+		width: 1200px;
+	}
+}

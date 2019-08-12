@@ -1,0 +1,81 @@
+/**
+ * 旅游推荐
+ */
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.aboutusPage {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutusPage>div {
+  width: 100%;
+  height: auto;
+}
+
+.aboutusPage .contents .title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.aboutusPage .contents .content {
+  padding-top: 15px;
+  padding-bottom: 50px;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutusPage .contents p.g-para {
+  width: 100% !important;
+  text-align: left;
+}
+
+.aboutusPage .contents p.g-para img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+.aboutusPage .contents p img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+.aboutusPage .nulls {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  color:#999;
+}
+
+
+/**
+ * 返回到首页
+ */
+/* .aboutusPage .goback {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 18px;
+  color: #999;
+  margin-top: 15px;
+}
+
+.aboutusPage .goback:hover {
+  color: #16994D;
+  cursor: pointer;
+}
+
+.aboutusPage .des .g-para {
+  width: 100%;
+} */

@@ -1,0 +1,207 @@
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#wonderfulatlas {
+	margin: 0 auto;
+}
+
+#wonderfulatlas .wonderfulatlasName {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: #999999;
+	font-size: 14px;
+}
+
+#wonderfulatlas .containersName {
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#wonderfulatlas .containersName span {
+	color: #F7AA24;
+}
+
+#wonderfulatlas .containersName span a {
+	color: black;
+}
+
+
+/*======轮播======*/
+
+#wonderfulatlas .totalImgs {
+	width: 100%;
+	background-color: #f0f0f0;
+}
+
+#wonderfulatlas .broadCastImg {
+	margin: 0 auto;
+	width: 1200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#wonderfulatlas .broadCastImg .leftBroadCast {
+	width: 870px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -3px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 1px 1px 2px 1px #999;
+}
+.leftBroadCast .bg-img {
+	width:100%;
+	height:670px;
+	background-size:cover;
+	text-align: center;
+	position: relative;
+}
+
+
+
+#wonderfulatlas .broadCastImg .leftBroadCast .prev {
+	position: absolute;
+	top: 260px;
+	left: 20px;
+	z-index: 10;
+	width: 39px;
+	height: 67px;
+	background: url('../../assets/images/country_left.png') center no-repeat;
+}
+
+#wonderfulatlas .broadCastImg .leftBroadCast .prev:hover {
+	background: url('../../assets/images/country_left_on.png') center no-repeat;
+}
+
+#wonderfulatlas .broadCastImg .leftBroadCast .next {
+	position: absolute;
+	top: 260px;
+	right: 20px;
+	width: 39px;
+	height: 67px;
+	z-index: 2;
+	background: url('../../assets/images/country_right.png') center no-repeat;
+}
+
+#wonderfulatlas .broadCastImg .leftBroadCast .next:hover {
+	background: url('../../assets/images/country_right_on.png') center no-repeat;
+}
+
+/**
+ * 判断视频是否存在
+ */
+#wonderfulatlas .broadCastImg .leftBroadCast .video-img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:50px;
+	height:40px;
+	margin-left:-25px;
+	margin-top:-20px;
+	display:block;
+}
+#wonderfulatlas .broadCastImg .leftBroadCast .video-imgs{
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:50px;
+	height:40px;
+	margin-left:-25px;
+	margin-top:-20px;
+}
+/**
+ * 右边的小图样式
+ */
+#wonderfulatlas .broadCastImg .rghtBroadCast {
+	width: 320px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: -3px;
+	overflow: hidden;
+}
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls{
+	margin-right:3px;
+	margin-bottom:4px;
+}
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls:nth-child(2n){
+	margin-right:0;
+}
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg {
+	height: 100%;
+	width: 340px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls,
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one {
+	width: 150px;
+	height: 150px;
+	vertical-align: top;
+	display: inline-block;
+	
+}
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one video{
+	width:150px;
+	height:150px;
+}
+/*
+ *给视频加上边框的样式 
+ */
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one.is_active{
+	border: 4px solid #f7aa24;
+	width: 142px;
+	height: 142px;
+	margin-right: 0;
+}
+#wonderfulatlas .broadCastImg .rghtBroadCast .containerImg .videosmalls .videosmall-one.is_active video {
+	width: 142px;
+	height: 142px;
+	margin-right: 0;
+}
+.rghtBroadCast .containerImg img {
+	max-width: 150px;
+	height: 150px;
+	margin-right: -3px;
+	margin-top: -4px;
+}
+
+.rghtBroadCast .containerImg img.is_active {
+	border: 4px solid #f7aa24;
+	width: 142px;
+	height: 142px;
+	margin-right: 0;
+}
+
+.rghtBroadCast img:nth-child(1),
+.rghtBroadCast img:nth-child(2) {
+	margin-top: 0;
+}
+
+#wonderfulatlas .explain {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+/**
+ * 底部文字说明
+ */
+#wonderfulatlas .broadCastImg .picContent {
+	width:100%;
+	line-height:30px;
+	margin-top:40px;
+	font-size:16px;
+	font-family: "微软雅黑";
+    text-indent: 1.2em;
+
+}

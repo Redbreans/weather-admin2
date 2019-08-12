@@ -1,0 +1,1312 @@
+/*
+首页
+*/
+
+template::-webkit-scrollbar {
+	display: none
+}
+
+
+/* 顶部通知 */
+
+.meteorologicals {
+	height: 40px;
+	background-color: #6d6d6d;
+	width: 100%;
+	color: #fff;
+	border-color: none;
+}
+
+
+/*
+ 跑马灯
+ */
+
+.weatherWarning {
+	width: 1200px;
+	text-align: left;
+	margin: 0 auto;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	position: relative;
+	/*cursor: pointer;*/
+}
+
+.meteorologicals .weatherWarning img {
+	width: 23px;
+	height: 22px;
+	position: absolute;
+	top: 10px;
+}
+
+.meteorologicals .weatherWarning .contentPmd {
+	overflow: hidden;
+	width: 1170px;
+	position: relative;
+	left: 23px;
+	height: 40px;
+}
+
+.meteorologicals .weatherWarning .contentPmd span {
+	margin-right: 50px;
+}
+
+.meteorologicals .weatherWarning .loop-text {
+	display: inline-block;
+	position: absolute;
+	white-space: nowrap;
+	height:5px
+}
+
+
+/* banner轮播 */
+
+.containerBanner {
+	height: 350px;
+	width: 100%;
+	position: relative;
+	/*background: url('../../assets/images/homepage_bg1.png') center no-repeat;*/
+	overflow: hidden;
+	margin: auto;
+}
+
+.containerBanner .bg-img {
+	/*width: 140%;*/
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	/*position: absolute;
+	left: -20%;
+	top: 0;
+	z-index: 99;
+	border-radius: 0 0 40% 40%;*/
+}
+
+
+/*.containerBanner .bg-img:after {
+	width: 140%;
+	height: 500px;
+	position: absolute;
+	left: -20%;
+	top: 0;
+	z-index: 99;
+	content: '';
+	border-radius: 0 0 10% 10%;
+}*/
+
+.containerBanner .el-carousel {}
+
+.containerBanner .el-carousel__container {
+	height: 350px;
+}
+
+.containerBanner .el-carousel__indicators .el-carousel__indicator.is-active .el-carousel__button {
+	background: url('../../assets/images/homepage_dot_on.png') center no-repeat;
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+}
+
+.containerBanner .el-carousel__indicators .el-carousel__indicator {
+	background: url('../../assets/images/homepage_dot_shadow.png') center no-repeat;
+	width: 12px;
+	height: 12px;
+	margin-right: 12px;
+}
+
+.containerBanner .el-carousel__indicators {
+	padding: 10px 10px;
+}
+
+.containerBanner .el-carousel__button {
+	display: block;
+	opacity: 0.48;
+	width: 12px;
+	height: 12px;
+	background: url('../../assets/images/homepage_dot.png') center no-repeat;
+	background-size: cover;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin-right: 10px;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	transition: .3s;
+	border-radius: 10px;
+	z-index: 2;
+	opacity: 1;
+}
+
+.meteorologicals {
+	height: 40px;
+	width: 100%;
+}
+
+
+/**
+ *  特色旅游推荐 
+ */
+
+.touristWeather {
+	background: url('../../assets/images/homepage_bg2.png') center no-repeat;
+	height: 778px;
+	width: 100%;
+}
+
+.touristTitle {
+	text-align: center;
+	font-size: 36px;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+
+.touristTitle p {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+ * 旅游天气
+ * 
+ 
+ */
+
+.homesPages .tourismWeather {
+	width: 100%;
+	/*background: url('../../assets/images/homepage_bg2.png') center no-repeat;*/
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.homesPages .tourismWeatherContent {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* 旅游天气名称 */
+
+.homesPages .tourismWeatherContent .tourismWeatherName {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.homesPages .tourismWeatherContent .tourismWeatherName div {
+	font-size: 36px;
+	color: black;
+	padding-top: 25px;
+	padding-bottom: 8px;
+}
+
+
+/* 名称切换 */
+
+.homesPages .tourismWeatherContent .nameShow {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+.homesPages .tourismWeatherContent .nameShow .signNames {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+.homesPages .tourismWeatherContent .nameShow .signNames>div>div {
+	width: 100px;
+	height: 40px;
+	background-color: #16994D;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	margin: 10px 10px 10px 0;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.homesPages .tourismWeatherContent .nameShow .signNames:hover>div>div {
+	background-color: #32C972;
+}
+
+.homesPages .tourismWeatherContent .nameShow .signNames>div.isshow>div {
+	background-color: #F7AA24;
+}
+
+
+/*
+ 地图块
+  */
+
+.homesPages .tourismWeatherContent .containerDescript {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* 小窗口  
+ * 加class类名的效果 
+ */
+
+.homesPages .tourismWeatherContent .butteryHatch {
+	width: 180px;
+	height: 190px;
+	z-index: 200;
+	background: url('../../assets/images/homepage_bgbox1_box.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all .7s linear;
+	transition: all .7s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div.title {
+	font-size: 18px;
+	color: #16994D;
+	font-weight: 800;
+	padding-left: 180px;
+	padding-top: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div {
+	font-size: 16px;
+	color: #16994D;
+	padding-bottom: 6px;
+	padding-left: 180px;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div.hpa {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div.weather {
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div.humidity {
+	-webkit-transition: all .4s linear;
+	transition: all .4s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div.direction {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch div.precipitation {
+	-webkit-transition: all .6s linear;
+	transition: all .6s linear;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch.WeatherFactDatashover div {
+	padding-left: 20px;
+}
+
+.homesPages .tourismWeatherContent .butteryHatch.WeatherFactDatashover {
+	opacity: 1;
+}
+
+
+/* 地图  */
+
+.homesPages .tourismWeatherContent .landsMaps {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 870px;
+	height: 580px;
+	background: url('../../assets/images/homepage_bgbox1.png') center no-repeat;
+	background-size: 100% 100%;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.homesPages .tourismWeatherContent .landsMaps #mapSiteBox {
+	height: 572px;
+	width: 862px;
+	margin: 4px 4px 4px 4px;
+	z-index: 100;
+}
+
+
+/* 24小时天气情况 */
+
+.homesPages .tourismWeatherContent .popularHeat {
+	width: 320px;
+	height: 580px;
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: top;
+	background: url('../../assets/images/homepage_bgbox1.png') center no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/* 24小时天气情况标题 */
+
+.homesPages .tourismWeatherContent .popularHeat .title {
+	background: url('../../assets/images/homepage_bg_form1.png') center no-repeat;
+	width: 320px;
+	background-color: #16994D;
+	height: 100px;
+	line-height: 50px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: left;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .title div {
+	font-size: 20px;
+	text-align: center;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .title span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 14px;
+	padding-top: 5px;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .title span:first-child {
+	width: 18%;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .title span:nth-child(2) {
+	width: 16%;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .title span:nth-child(3) {
+	width: 18%;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .title span:nth-child(4) {
+	width: 15%;
+}
+
+
+/* 24小时天气情况内容 */
+
+.homesPages .tourismWeatherContent .popularHeat .content {
+	width: 312px;
+	height: 405px;
+	border: 4px solid #d0ebde;
+	border-top: none;
+	overflow: hidden;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .contentBlock {
+	width: 312px;
+	height: 405px;
+	color: #16994D;
+	font-size: 14px;
+	text-align: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+	line-height: 24px;
+	padding-top: 22px;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .contentBlock div {
+	margin-bottom: 24px;
+}
+
+
+/* 滚动条 */
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanName {
+	width: 18%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanName.isColor {
+	color: #F7AA24;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanWeather {
+	width: 19%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanTemperature {
+	width: 19%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanTemperature .Maxs {
+	display: inline;
+	color: #F7AA24;
+	padding: 0;
+	margin: 0;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanTemperature .Mins {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .content .spanImg img {
+	margin: 0 2px 0 2px;
+}
+
+
+/* 更多景区 */
+
+.homesPages .tourismWeatherContent .popularHeat .moreScenicSpot {
+	margin-top: 10px;
+	width: 100%;
+	height: 60px;
+	background-color: #16994D;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	font-size: 24px;
+	position: relative;
+	cursor: pointer;
+}
+
+.homesPages .tourismWeatherContent .popularHeat .moreScenicSpot:hover {
+	background-color: #32C972;
+}
+
+
+/**
+ * 特色旅游推荐图片的样式
+ */
+
+.recommendationS {
+	width: 100%;
+	height: 900px;
+	background: url('../../assets/images/322287.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	/*overflow: hidden;*/
+}
+
+.recommendationS:hover {
+	/*transform: scale(1.2);
+	transition: all ease-in-out .5s;*/
+}
+
+.bgopa {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 900px;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: 2;
+}
+
+#touristRecommed {
+	height: 750px;
+}
+
+#recommendations,
+#touristRecommed {
+	z-index: 3;
+	position: relative;
+}
+
+.recommendationS.recommendation .touristTitle {
+	margin-bottom: 0px;
+}
+
+.recommendation .touristTitle {
+	color: #fff;
+	height: 128px;
+	padding-bottom: 20px;
+	padding: 22px 0 0;
+}
+
+.recommendation .touristTitle img {
+	margin-bottom: 5px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.recommendation .touristPictures {
+	height: 590px;
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt {
+	height: 188px;
+	width: 290px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.recommendation .touristPictures .touristPictureFisrt.fadeIn {
+	animation-name: fadeIn;
+}
+
+.recommendation .touristPictures .touristPictureFisrt.animated {
+	animation-duration: 1s;
+}
+
+
+/**
+ * 定位图片的位置
+ */
+
+.recommendation .touristPictures .touristPictureFisrt img {
+	height: 188px;
+	width: 290px;
+	cursor: pointer;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:first-child img {
+	height: 388px;
+	width: 592px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt.aone:nth-child(1) {
+	animation-delay: .5s
+}
+
+
+/**
+ * ['aone','bone','cone','done','eone','fone','gone','hone']
+ * 
+ */
+
+.recommendation .touristPictures .touristPictureFisrt.bone:nth-child(2) {
+	animation-delay: .5s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.cone:nth-child(3) {
+	animation-delay: .7s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.done:nth-child(4) {
+	animation-delay: .9s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.eone:nth-child(5) {
+	animation-delay: 1.1s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.fone:nth-child(6) {
+	animation-delay: 1.3s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.gone:nth-child(7) {
+	animation-delay: 1.5s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.hone:nth-child(8) {
+	animation-delay: 1.7s
+}
+
+.recommendation .touristPictures .touristPictureFisrt.ione:nth-child(9) {
+	animation-delay: 1.9s
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 604px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(3) {
+	position: absolute;
+	top: 0;
+	left: 906px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(4) {
+	position: absolute;
+	top: 200px;
+	left: 604px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(5) {
+	position: absolute;
+	top: 200px;
+	left: 906px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(6) {
+	position: absolute;
+	top: 400px;
+	left: 0;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(7) {
+	position: absolute;
+	top: 400px;
+	left: 302px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(8) {
+	position: absolute;
+	top: 400px;
+	left: 604px;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:nth-child(9) {
+	position: absolute;
+	top: 400px;
+	left: 906px;
+}
+
+
+/**
+ * 鼠标移入图片缓慢放大
+ */
+
+.recommendation .touristPictures .touristPictureFisrt:hover img {
+	transform: scale(1.2);
+	transition: all ease-in-out .5s;
+}
+
+.recommendation .touristPictures .touristPictureFisrt:first-child {
+	height: 388px;
+	width: 592px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #ddd;
+}
+
+.recommendation .touristPictures .touristPictureFisrt .changestyle {
+	position: relative;
+}
+
+.recommendation .touristPictures .touristPictureFisrt .fly-content {
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, .4);
+	
+}
+.recommendation .touristPictures .touristPictureFisrt .fly-content.overName span{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/*color:red;*/
+	width:70%;
+	display:inline-block;
+}
+.recommendation .touristPictures .touristPictureFisrt:first-child .fly-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, .4)
+}
+
+
+/*.recommendation .touristPictures .touristPictureFisrt:first-child .nameDetail {
+	position: absolute;
+	top: 592px;
+	right: 0;
+	width: 592px;
+	height: 0;
+	background-color: rgba(0, 0, 0, .4);
+}*/
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyles:first-child .nameDetail {*/
+
+
+/*position: absolute;
+	top: 592px;
+	right: 0;
+	width: 592px;
+	height: 388px;
+	line-height: 388px;
+	transition: all ease-in-out 1s;*/
+
+
+/*}*/
+
+
+/**
+ * 所有的遮罩的样式  ---鼠标移入移出的样式
+ */
+
+
+/*.recommendation .touristPictures .touristPictureFisrt .nameDetail {
+	position: absolute;
+	right: 0;
+	top: 288px;
+	width: 288px;
+	height: 0;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .4);
+}*/
+
+
+/**
+ * 遮罩hover时出现
+*/
+
+
+/**
+ * 鼠标移入加的类名是mystyle
+ */
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyle .nameDetail {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 288px;
+	height: 188px;
+	transition: all ease-in-out .5s;
+}*/
+
+
+/**
+ * 鼠标移出加的类名是mystyles
+ */
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyles .nameDetail{
+	position: absolute;
+	top: 288px;
+	right: 0;
+	width: 288px;
+	height: 188px;
+	line-height: 188px;
+	transition: all ease-in-out 1s;
+}*/
+
+
+/*
+ * 文字-----鼠标移入移出的样式
+ */
+
+
+/*.recommendation .touristPictures .touristPictureFisrt .fly-content {
+	transform: rotate(-270deg);
+	position: absolute;
+	top: -240px;
+	right: -120px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}*/
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyles .fly-content{
+	position: absolute;
+	top: -180px;
+	right: -80px;
+	margin: auto;
+	line-height: 188px;
+	transform: rotate(-270deg);
+	transform-origin: 50%,10%;
+	transition: all ease-in-out 1s;
+	text-align: center;
+}*/
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyle .fly-content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	line-height: 188px;
+	transform: rotate(-360deg);
+	transition: all ease-in-out .5s;
+	text-align: center;
+}*/
+
+
+/*
+ * 第一个文字的样式----鼠标移入移出的样式
+ */
+
+
+/*.recommendation .touristPictures .touristPictureFisrt:first-child .fly-content {
+	transform: rotate(-270deg);
+	position: absolute;
+	top: -420px;
+	right: -260px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}*/
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyle:first-child .fly-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	line-height: 388px;
+	transform: rotate(-360deg);
+	transition: all ease-in-out .7s;
+}*/
+
+
+/*.recommendation .touristPictures .touristPictureFisrt.mystyle:first-child .nameDetail {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width:100%;
+	height: 388px;
+	line-height: 388px;
+	transition: all ease-in-out .7s;
+}*/
+
+
+/**
+ * 查看更多样式
+ */
+
+.recommendation.recommendationS #touristRecommed .lookMore-box {
+	width: 320px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	margin: 0 auto;
+	background-color: #16994D;
+	color: #fff;
+	font-size: 24px;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+
+/**
+ * 鼠标移入背景颜色发生改变
+ * 
+ */
+
+.recommendation.recommendationS #touristRecommed .lookMore-box:hover {
+	background-color: #32c972;
+}
+
+
+/*.recommendation.recommendationS #touristRecommed .lookMore-box.looks {
+	background-color: #057b37;
+}*/
+
+
+/*.recommendation.recommendationS #touristRecommed .lookMores {
+	width: 320px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	margin: 0 auto;
+	background-color: #16994D;
+	color: #fff;
+	font-size: 24px;
+	margin-top: 30px;
+	cursor: pointer;
+	
+}*/
+
+
+/**
+ * 交通实况
+ */
+
+.trafficMeteorologyConditions {
+	background-color: #f0f0f0;
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+.trafficMeteorologyConditions .containerS {
+	height: 160px;
+	width: 1200px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.trafficMeteorologyConditions .containerS img {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.trConditions span {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 10px;
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	background-color: #16994D;
+}
+
+.trConditions span:hover {
+	background-color: #32c972;
+}
+
+.trConditions span.is_active {
+	color: #fff;
+	font-size: 18px;
+	background-color: #F7AA24;
+}
+
+
+/**
+ * 地图样式
+ */
+
+.trafficMeteorologyMap {
+	height: 690px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	background: url('../../assets/images/homepage_bgbox2.png') center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/**
+ * 国道对应的天气实况样式
+ */
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic {
+	width: 240px;
+	height: 240px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	color: #F7AA24;
+	text-indent: 1.5em;
+	background: url('../../assets/images/homepage_bgbox2_box.png') center no-repeat;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all .7s linear;
+	transition: all .7s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .conditionCityName {
+	font-size: 18px;
+	margin-top: 10px;
+	padding-left: 240px;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic.WeatherFactDatashover div {
+	padding-left: 0px;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic.WeatherFactDatashover {
+	opacity: 1;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights {
+	font-size: 16px;
+	margin-top: 5px;
+	padding-left: 240px;
+}
+
+
+/**
+ * 交通实况的动画效果
+ */
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.heightkm {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.hpa {
+	-webkit-transition: all .2s linear;
+	transition: all .3s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.opadeg {
+	-webkit-transition: all .2s linear;
+	transition: all .4s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.temperature {
+	-webkit-transition: all .2s linear;
+	transition: all .5s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.humidity {
+	-webkit-transition: all .4s linear;
+	transition: all .6s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.windSpeed {
+	-webkit-transition: all .3s linear;
+	transition: all .7s linear;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap .detailTraffic .heights.precipitation {
+	-webkit-transition: all .6s linear;
+	transition: all .6s linear;
+}
+
+
+/**
+ * 去掉地图上面自带的样式
+ */
+
+.smnoprint>div {
+	display: none;
+}
+
+.trafficMeteorologyConditions .trafficMeteorologyMap #mapSiteTraffics {
+	height: 682px;
+	width: 1192px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 100;
+}
+
+
+/**
+ * 特色旅游线路推荐样式
+ */
+
+.pages .landsRecommendHome {
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.pages .landsRecommendHome .containers {
+	margin: 0 auto;
+	text-align: center;
+	width: 1200px;
+	padding-bottom: 15px;
+}
+
+.pages .landsRecommendHome .containers img {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.pages .landsRecommendHome .specialTitle {
+	margin-top: 25px;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 0
+}
+
+.pages .landsRecommendHome .recomemendPictures {
+	height: 290px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.pages .landsRecommendHome .recomemendPictures span {
+	display: inline-block;
+	width: 43px;
+	height: 41px;
+	border-radius: 50%;
+	margin-top: 124px;
+	background: url('../../assets/images/homepage_turnleft.png') center no-repeat;
+	cursor: pointer;
+}
+
+.pages .landsRecommendHome .recomemendPictures a {
+	display: inline-block;
+	width: 43px;
+	height: 41px;
+	border-radius: 50%;
+	margin-top: 124px;
+	background: url('../../assets/images/homepage_turnright.png') center no-repeat;
+}
+
+.pages .landsRecommendHome .recomemendPictures span:hover,
+.pages .landsRecommendHome .recomemendPictures .prev:hover span {
+	background: url('../../assets/images/homepage_turnleft_on.png') center no-repeat;
+}
+
+.pages .landsRecommendHome .recomemendPictures a:hover,
+.pages .landsRecommendHome .recomemendPictures .next:hover a {
+	background: url('../../assets/images/homepage_turnright_on.png') center no-repeat;
+}
+
+.pages .landsRecommendHome .recomemendPictures .prev,
+.pages .landsRecommendHome .recomemendPictures .next {
+	width: 43px;
+	height: 100%;
+	vertical-align: top;
+	margin-right: -4px;
+	display: inline-block;
+}
+
+.pages .landsRecommendHome .recomemendPictures .showBroadCast {
+	width: 1108px;
+	overflow: hidden;
+	vertical-align: top;
+	margin-right: -4px;
+	display: inline-block;
+}
+
+.pages .landsRecommendHome .recomemendPictures ul {
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.pages .landsRecommendHome .recomemendPictures li {
+	width: 265px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	border: 2px solid #ddd;
+}
+
+.pages .landsRecommendHome .recomemendPictures li {
+	float: left;
+	transition: .6s;
+}
+
+.pages .landsRecommendHome .recomemendPictures li .img-yinc {
+	overflow: hidden;
+	height: 265px;
+	height: 210px;
+}
+
+.pages .landsRecommendHome .recomemendPictures li:hover {
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .4);
+	border-color: #16994D;
+	color: #16994D;
+}
+
+.pages .landsRecommendHome .recomemendPictures li:hover img {
+	transform: scale(1.2);
+	transition: all ease-in-out .5s;
+}
+
+.pages .landsRecommendHome .recomemendPictures li img {
+	max-width: 100%;
+	height: 210px;
+}
+
+.pages .landsRecommendHome .recomemendPictures li p {
+	line-height: 32px;
+	height: 80px;
+	font-size: 18px;
+	text-indent: 1.25em;
+	padding-top: 8px;
+	padding-bottom: 12px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+
+/*
+ *动画效果 
+ */
+
+@media only screen and (min-width: 1200px) {
+	.containers.container {
+		width: 1200px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.containerBanner {
+		width: 1200px;
+	}
+	#footer-contentsfooter {
+		width: 1200px;
+	}
+	.nav-herder {
+		width: 1200px;
+	}
+	body {
+		overflow-x: scroll;
+	}
+	.meteorologicals {
+		width: 1200px
+	}
+	.recommendationS {
+		width: 1200px;
+	}
+	.trafficMeteorologyConditions {
+		width: 1200px;
+		background-color: #f0f0f0;
+	}
+}
